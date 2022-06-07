@@ -31,10 +31,9 @@ jobs:
           API_ID: ${{ secrets.API_ID }}
           API_HASH: ${{ secrets.API_HASH }} 
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          SUDO_USERS: ${{ secrets.SUDO_USERS }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          LOG_CHANNEL: ${{ secrets.LOG_CHANNEL }}
-          
+          OWNER: ${{ secrets.OWNER }}
+          THUMBNAIL: ${{ secrets.THUMBNAIL }}
+          FFMPEG: ${{ secrets.FFMPEG }}
       - name: Clone the Python script.
         run: curl https://katb.in/enusuweqafu/raw >> main.py
 
